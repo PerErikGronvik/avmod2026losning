@@ -35,6 +35,10 @@ uv sync
 echo -e "\033[0;36mRegistering Jupyter kernel '$kernelName'...\033[0m"
 ./.venv/bin/python -m ipykernel install --user --name="$kernelName" --display-name="Python 3 ($folderName)"
 
+# Refresh Jupyter kernel list
+echo -e "\033[0;36mRefreshing Jupyter kernel list...\033[0m"
+./.venv/bin/jupyter kernelspec list
+
 echo ""
 echo -e "\033[0;32mDone! Now in VS Code:\033[0m"
 echo -e "\033[0;33m1. Reload VS Code window (Ctrl+Shift+P -> Reload Window)\033[0m"

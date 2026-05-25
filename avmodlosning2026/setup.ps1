@@ -35,7 +35,7 @@ Write-Host "Registering Jupyter kernel '$kernelName'..." -ForegroundColor Cyan
 
 # Refresh Jupyter kernel list
 Write-Host "Refreshing Jupyter kernel list..." -ForegroundColor Cyan
-jupyter kernelspec list
+.\.venv\Scripts\jupyter-kernelspec.exe list
 
 Write-Host ""
 Write-Host "Done! Now in VS Code:" -ForegroundColor Green
