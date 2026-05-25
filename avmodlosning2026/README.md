@@ -8,7 +8,7 @@ Reusable setup scripts for creating isolated Python environments for Jupyter not
 |---------|--------|
 | **[uv](https://docs.astral.sh/uv/)** | Pakkehåndtering. `uv sync` låser alle avhengigheter til eksakte versjoner i `uv.lock`, slik at alle som kloner repoet får identiske miljøer uavhengig av maskin eller tidspunkt. Installasjonsrekkefølgen er deterministisk — viktig når pakker har implisitte avhengigheter av hverandre. |
 | **[GitHub](https://github.com/)** | Versjonskontroll og revisjonsspor. Oppfyller dokumentasjonskravene i **EU AI Act** (Forordning (EU) 2024/1689, art. 12–13) om sporbarhet for AI-relaterte systemer. |
-| **[Dependabot](https://docs.github.com/en/code-security/dependabot)** | Automatisk oppdatering av `pyproject.toml`. Åpner pull requests ukentlig når nyere versjoner av pakker er tilgjengelig — se `.github/dependabot.yml`. |
+| **[Dependabot](https://docs.github.com/en/code-security/dependabot)** | Automatisk oppdatering av `uv.lock` og `pyproject.toml`. Åpner pull requests ukentlig når nyere pakkeversioner er tilgjengelig — se `.github/dependabot.yml`. Etter å ha merget en Dependabot-PR: kjør `.\setup.ps1` (Windows) eller `./setup.sh` (Linux/Mac). `uv sync` leser den oppdaterte `uv.lock` og installerer de nye versjonene i `.venv`, og kernelen re-registreres automatisk. Ingenting i `.ipynb`-filen trenger endres — notebook-metadata lagrer bare kernel-**navnet**, ikke pakkeversjonene. |
 
 ## Quick Start
 
