@@ -1,7 +1,7 @@
 [project]
-name = "your-project-name"
-version = "0.1.0"
-description = "Interactive notebooks for mathematical concepts"
+name = "avmodlosning2026"
+version = "1.0"
+description = "Eksamen 2026 - Avansert modellering"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -27,10 +27,10 @@ dependencies = [
     # "xgboost>=2.0.0",        # Gradient boosting algorithms
     
     # === Data Science with Scripting ===
-    # pandas>=2.3.2            # Already included above
-    # numpy>=2.3.2             # Already included above
-    # matplotlib>=3.10.5       # Already included above
-    "seaborn>=0.13.2",         # Statistical visualization
+    # "pandas>=2.3.2",            # Already included above
+    # "numpy>=2.3.2",             # Already included above
+    # "matplotlib>=3.10.5",       # Already included above
+     "seaborn>=0.13.2",         # Statistical visualization
     
     # === Statistical Analysis (regression, linear models, PDP plots) ===
     # pandas>=2.3.2            # Already included above
@@ -47,8 +47,8 @@ dependencies = [
     # numpy>=2.3.2             # Already included above (gradient computations)
     
     # === Testing and Quality (for champions) ===
-    # "pytest>=7.4.0",         # Testing framework
-    # "pytest-cov>=4.1.0",     # Code coverage for tests
+     "pytest>=7.4.0",         # Testing framework
+     "pytest-cov>=4.1.0",     # Code coverage for tests
     # "black>=23.0.0",         # Code formatter
     # "ruff>=0.1.0",           # Fast Python linter
 ]
